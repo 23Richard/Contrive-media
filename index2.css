@@ -11,7 +11,7 @@
 
 
 .header {
-    min-height: 310vh;
+    min-height: 120vh;
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.7)), url("dont break da breat.jpg");
     background-position: center;
@@ -19,17 +19,48 @@
     position: relative;
 }
 
-@media(min-width: 390px){
+@media(min-width: 209px){
     .header{
-        min-height: 589vh;
+        min-height: 539vh;
     }
 }
-@media(min-width: 700px){
+@media(min-width: 320px){
     .header{
-        min-height: 230vh;
+        min-height: 629vh;
+    }
+}
+@media(min-width: 360px){
+.header{
+        min-height: 539vh;
+    }
+}
+@media(min-width: 414px){
+.header{
+        min-height: 109vh;
     }
 }
 
+@media(min-width: 390px){
+    .header{
+        min-height: 509vh;
+    }
+}
+@media(min-width: 768px){
+    .header{
+        min-height: 299vh;
+    }
+}
+@media(min-width: 1024px){
+    .header{
+        min-height: 290vh;
+    }
+}
+
+@media(min-width: 1444px){
+    .header{
+        min-height: 309vh;
+    }
+}
 
 html {
     scroll-behavior: smooth;
@@ -109,7 +140,7 @@ nav img{
     height: 400px;
 }
 
-.video-grid video {
+.video-grid iframe {
     width: 100%;
     height: 500px;
     max-height: 400px;
@@ -118,8 +149,21 @@ nav img{
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
+.video-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 
-.video-grid video:hover {
+.video-item p {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.video-grid iframe:hover {
     transform: scale(1.05);
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); 
     border-color: #ff6600; 
@@ -280,7 +324,7 @@ h2{
     width: 80%;
     background: #fff;
     border-radius: 6px;
-/*    margin: auto;*/
+    margin: auto;
     padding: 60px 60px 50px 40px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
@@ -450,6 +494,10 @@ h2{
 
 }
 
+/*.footer-logo a:hover::before{
+    left: 0; 
+    width: 100%;
+}*/
 
 @media (max-width: 700px) {
     .course-col {
